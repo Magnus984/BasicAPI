@@ -3,9 +3,11 @@ from datetime import datetime
 
 class BasicInfo(Resource):
     def get(self):
+        current_datetime = datetime.utcnow()
+        formatted_datetime = current_datetime.replace(microsecond=0).isoformat() + "Z"
         return {
             'email': 'tettehmagnus35@gmail.com',
-            'current_datetime': datetime.utcnow().isoformat(),
+            'current_datetime': formatted_datetime,
             'github_url': 'https://github.com/Magnus984/BasicAPI'
         }
 

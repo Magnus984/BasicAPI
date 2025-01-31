@@ -11,7 +11,7 @@ A public API that returns the following information in JSON format
 ## Stack
 
 - Flask
-- Python
+- Python [Backlink](https://hng.tech/hire/python-developers)
 
 ## Setup Instructions
 
